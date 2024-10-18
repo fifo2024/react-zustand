@@ -1,0 +1,36 @@
+{
+    "name": "react-zustand",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@ant-design/icons": "^5.5.1",
+        "antd": "^5.21.4",
+        "dayjs": "^1.11.13",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-router-dom": "^6.27.0",
+        "immer": "^10.1.1",
+        "zustand": "^5.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.16.12",
+        "@types/react": "^18.3.11",
+        "@types/react-dom": "^18.3.1",
+        "@typescript-eslint/eslint-plugin": "^5.62.0",
+        "@typescript-eslint/parser": "^5.62.0",
+        "@vitejs/plugin-react-swc": "^3.7.1",
+        "eslint": "^8.57.1",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "eslint-plugin-react-refresh": "^0.3.5",
+        "sass": "^1.80.2",
+        "typescript": "^5.6.3",
+        "vite": "^4.5.5"
+    }
+}
