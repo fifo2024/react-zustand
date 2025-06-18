@@ -8,7 +8,7 @@ import { FoodBox } from "~/components/FoodBox";
 
 const About = () => {
     const counter = useCounterStore((state) => state.counter);
-    const fishCount = useFoodStore.subscribe(
+    const fishCountUnsub = useFoodStore.subscribe(
         (state) => state.fish,
         (fish) => {
             console.log("fish counter change::", fish);
