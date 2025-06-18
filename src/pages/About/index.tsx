@@ -1,5 +1,5 @@
 // pages/About/index.tsx
-import useCounterStore from "~/stores/counter";
+import { useCounterStore, useFoodStore } from "~/stores";
 import { BearBox } from "~/components/BearBox";
 import { CatBox } from "~/components/CatBox";
 import { CatBox2 } from "~/components/CatBox2";
@@ -8,6 +8,12 @@ import { FoodBox } from "~/components/FoodBox";
 
 const About = () => {
     const counter = useCounterStore((state) => state.counter);
+    const fishCount = useFoodStore.subscribe(
+        (state) => state.fish,
+        (fish) => {
+            console.log("fish counter change::", fish);
+        }
+    );
 
     return (
         <div>
