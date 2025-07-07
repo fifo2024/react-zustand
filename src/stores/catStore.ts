@@ -1,6 +1,6 @@
 import { StateCreator, create } from "zustand";
 import { immer } from "zustand/middleware/immer";
-import { createSelectors } from "../utils/createSelectors";
+import { createSelectors } from "./utils/createSelectors";
 import { devtools, persist, subscribeWithSelector } from "zustand/middleware";
 
 type TCatStoreState = {
